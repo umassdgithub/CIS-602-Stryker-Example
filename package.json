@@ -1,0 +1,16 @@
+{
+  "name": "mutation-testing",
+  "version": "1.0.0",
+  "description": "## Program Functionality",
+  "main": "classifyTriangle.js",
+  "scripts": {
+    "test": "rm -rf .stryker-tmp/* && jest",
+    "reset": "jest --clearCache",
+    "mutation": "rm -rf .stryker-tmp/* && stryker run --mutate \"classifyTriangle.js\" --testRunner jest --coverageAnalysis off --reporters html,clear-text,progress"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^9.6.1",
+    "@stryker-mutator/jest-runner": "^9.6.1",
+    "jest": "^30.3.0"
+  }
+}
