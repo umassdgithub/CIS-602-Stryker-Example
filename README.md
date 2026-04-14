@@ -10,9 +10,19 @@ It is common to start this process by installing the library to the project unde
 
 ```bash
 npm install
-npm install --save-dev @stryker-mutator/core @stryker-mutator/jest-runner
-npm init stryker@latest
+/npm init stryker@latest
 ```
+After running npm init stryker@latest
+
+Choose the following options:
+
+- None/others
+-  jest
+-  Html
+-  npm
+-  JSON
+
+
 
 Then we need to run:
 
