@@ -11,7 +11,6 @@ It is common to start this process by installing the library to the project unde
 ```bash
 npm install
 npm install --save-dev @stryker-mutator/core @stryker-mutator/jest-runner
-npm init stryker@latest
 ```
 
 Then we need to run:
