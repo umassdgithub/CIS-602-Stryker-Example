@@ -42,6 +42,19 @@ Open the `package.json` file and add the settings below to it the `scripts` obje
 }
 
 ```
+### If you are on Windows you will have issues with the rm command, so easy fix, is to go to the `package.json` and remove the related issues. The new scripts json should look like this now:
+
+```json
+
+ "scripts": {
+            "test": "jest", 
+            "reset": "jest --clearCache",
+            "mutation": "stryker run --reporters html"
+}
+
+```
+
+
 
 this line metions that when running:
 
